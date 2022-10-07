@@ -200,4 +200,108 @@ print(perCountryCombinedFinal.plot(kind = 'bar', width=0.8, figsize=(94,8)))
 
 
 
+print("China Debt trap in world map")
 
+
+# create a world map
+worldmap = pygal.maps.world.World()
+
+
+# set the title of the map
+worldmap.title = 'Countries under China Debt Trap'
+
+# adding the countries
+worldmap.add('Debt Parameter', {
+	    'la' : 100,
+		'cg' : 100,
+		'ao' : 100,
+		'kg' : 80,
+		'kh' : 80,
+		'tj' : 80,
+		'cm' : 80,
+		"gw" : 80,
+		"gn" : 80,
+		'mn' : 80,
+		'zw' : 80,
+		'me' : 80,
+		'zm' : 80,
+		'mz' : 80,
+		'ec' : 60,
+		'gy' : 60,
+		'pk' : 60,
+		'lk' : 60,
+		'by' : 60,
+		'sd' : 60,
+		'et' : 60,
+		'ug' : 60,
+		'ke' : 60,
+		'gm' : 60,
+		'ci' : 60,
+		'ga' : 60,
+		'ls' : 60,
+		'tg' : 60,
+		'sn' : 60,
+		'hn' : 40,
+		'bo' : 40,
+		'ar' : 40,
+		'mr' : 40,
+		'ml' : 40,
+		'ne' : 40,
+		'bf' : 40,
+		'bj' : 40,
+		'gh' : 40,
+		'sl' : 40,
+		'lr' : 40,
+		'er' : 40,
+		'eg' : 40,
+		'ye' : 40,
+		'cf' : 40,
+		'cd' : 40,
+		'td' : 40,
+		'mw' : 40,
+		'rw' : 40,
+		'tz' : 40,
+		'mu' : 40,
+		'mg' : 40,
+		'za' : 40,
+		'rs' : 40,
+		'mk' : 40,
+		'kz' : 40,
+		'tm' : 40,
+		'uz' : 40,
+		'bd' : 40,
+		'np' : 40,
+		'mm' : 40,
+		'pg' : 40,
+		'vn' : 40,
+		'ng' : 40,
+		'ni' : 20,
+		'gt' : 20,
+		'sv' : 20,
+		'pa' : 20,
+		'cr' : 20,
+		'br' : 20,
+		'do' : 20,
+		'tn' : 20,
+		'ma' : 20,
+		'dz' : 20,
+		'bw' : 20,
+		'bi' : 20,
+		'al' : 20,
+		'am' : 20,
+		'ge' : 20,
+		'jo' : 20,
+		'sy' : 20,
+		'ph' : 20,
+		'id' : 20,
+		'ir' : 20,
+
+
+
+})
+
+# save into the file
+worldmap.render_to_file('abcd.svg')
+
+print("Success")
+print("Go to the location to access the file")
