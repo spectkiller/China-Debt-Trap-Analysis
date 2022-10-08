@@ -1,2 +1,2 @@
-# PythonChinaDebtTrap.github.io
-China Debt Trap Data Analysis in Python
+# China Debt Trap Analysis
+China Debt Trap Data Analysis by using Python
